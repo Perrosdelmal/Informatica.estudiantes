@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFORMÁTICA</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Freeman', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #ffCB3A;
+            color: #000000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #212B38;
+            padding: 8px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #0f0f0f;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        nav a:hover {
+            text-decoration: color(display-p3 rgb(1, 1, 1) rgb(124, 126, 124) rgb(74, 74, 75))
+        }
+
+        .seccion {
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #FFFFFF;
+            border-radius: 5px;
+            display: none;
+        }
+
+        footer {
+            background-color: #37465B;
+            color: #fdfbfb;
+            text-align: center;
+            padding: .3px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .contenedor-imagen-texto {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .imagen-materia {
+            width: 35%;
+            height: auto;
+        }
+
+        .texto-materia {
+            width: 50%;
+            padding-left: 20px;
+        }
+
+        .cuadro {
+            width: 1240px;
+            height: 200px;
+            background-color: #FFFFFF;
+            border: 2px solid #FFFFFF;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        .cuadro5 {
+            width: 1240px;
+            height: 700px;
+            background-color: #FFFFFF;
+            border: 2px solid #FFFFFF;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        
+    </style>
+    <script>
+        src="script.js"
+        alert("¡Hola!, para empezar a explorar la página selecciona el apartado de tu interés, gracias.");
+        function mostrarSeccion(id) {
+            var secciones = document.querySelectorAll('.seccion');
+            secciones.forEach(function(seccion) {
+                seccion.style.display = 'none';
+            });
+            document.getElementById(id).style.display = 'block';
+            if (id !== "inicio") {
+                document.getElementById("inicio").style.display = 'none';
+            } else {
+                document.getElementById("inicio").style.display = 'flex';
+            }
+        }
+    </script>
+</head>
+<body>
+<header>
+    <h2>INFORMÁTICA I</h2>
+    <marquee><p2>EN EL BIEN FINCAMOS EL SABER</p2></marquee>
+</header>
+
+<nav>
+    
+    <button><a href="#inicio" onclick="mostrarSeccion('inicio')">Inicio</a></button>
+    <button><a href="#parcial1" onclick="mostrarSeccion('parcial1')">1er Parcial</a></button>
+        <button><a href="#parcial2" onclick="mostrarSeccion('parcial2')">2do Parcial</a></button>
+            <button><a href="#parcial3" onclick="mostrarSeccion('parcial3')">3er Parcial</a></button>
+                <button><a href="#parcial4" onclick="mostrarSeccion('parcial4')">4to Parcial</a></button>
+                    <button><a href="#materia" onclick="mostrarSeccion('materia')">FILOSOFÍA</a></button>
+                        <button><a href="#integrantes" onclick="mostrarSeccion('integrantes')">Integrantes</a></button>
+                            <button><a href="#contacto" onclick="mostrarSeccion('contacto')">Contacto</a></button>
+</nav>
+
+<div id="inicio" class="seccion">
+    <div class="contenedor-imagen-texto">
+        <img src="images.jpeg" class="imagen-materia">
+        <div class="texto-materia">
+            <h2>¡Hola!</h2>
+            <p>Bienvenido a nuestra página de Informática. Aquí podrás encontrar información sobre los diferentes parciales, la materia de Filosofía, los integrantes del equipo y cómo contactarnos.<br><li>Objetivo</li><p>El objetivo de la página de informática es proporcionar un recurso educativo integral para los estudiantes, complementando el contenido presentado en clase con explicaciones detalladas, ejemplos prácticos y recursos adicionales. Buscamos fomentar una comprensión profunda de los temas de informática, ofreciendo una plataforma donde los estudiantes puedan explorar conceptos, aclarar dudas y reforzar su aprendizaje a su propio ritmo. Nuestra meta es no solo mejorar la comprensión teórica, sino también fomentar habilidades prácticas y promover un interés continuo en el campo de la informática.</p> ¡Disfruta explorando!.</p>
+        </div>
+    </div>
+</div>
+
+<div id="parcial1" class="seccion">
+    <h2>1er Parcial</h2>
+    <div class="cuadro">
+        <p>
+            <strong>SISTEMA OPERATIVO</strong><br>
+            <strong>Concepto de sistema operativo</strong><br>
+            Un sistema operativo (S.O.) es un conjunto de programas que permite la administración eficaz de las
+            capacidades y recursos de una computadora. Es el programa (software) más importante de una computadora.
+            Para que funcionen otros programas, cada computadora de uso general debe tener uno. Los sistemas operativos
+            realizan tareas básicas, tales como reconocer la entrada de datos desde el teclado, enviar la salida de datos
+            a la pantalla, mantener un control de los archivos y directorios en disco, y controlar dispositivos
+            periféricos como impresoras, unidades de disco, etc.
+        </p>
+        <p>
+            <strong>Evolución</strong><br>
+            1950-1960: Monitor residente. Los primeros S.O. se desarrollaron a finales de los años 50, para gestionar
+            sistemas de procesamiento por lotes. Los sistemas de esta época eran muy primitivos, y su principal función
+            era transferir el control de una secuencia de trabajos (jobs) a otra. A principios de los 60, se desarrollaron
+            los sistemas de multiprogramación, permitiendo que varios trabajos residieran en la memoria al mismo tiempo,
+            aumentando la utilización del CPU.
+        </p>
+        <p>
+            <strong>Componentes principales de un S.O.</strong><br>
+            El sistema operativo se divide en dos partes: el núcleo (o kernel) y el intérprete de comandos (o shell).
+            El kernel es la parte central del sistema operativo, responsable de la gestión de los recursos del sistema,
+            incluyendo la memoria, el procesador y los dispositivos de entrada/salida. El shell es la interfaz que
+            permite a los usuarios interactuar con el sistema operativo, ya sea a través de comandos de texto o de una
+            interfaz gráfica de usuario (GUI).
+        </p>
+        <p>
+            <strong>Funciones principales del S.O.</strong><br>
+            El sistema operativo tiene varias funciones importantes, entre las cuales destacan:
+            <ul>
+                <li>Gestión de procesos: el S.O. administra la ejecución de los procesos, asignándoles tiempo de CPU y
+                    recursos necesarios.</li>
+                <li>Gestión de memoria: el S.O. controla la asignación y liberación de la memoria, asegurando que cada
+                    proceso tenga el espacio que necesita.</li>
+                <li>Gestión de archivos: el S.O. organiza y controla el acceso a los archivos en los dispositivos de
+                    almacenamiento.</li>
+                <li>Gestión de dispositivos: el S.O. controla y coordina el uso de los dispositivos de entrada/salida,
+                    como impresoras, discos duros, etc.</li>
+                <li>Interfaz de usuario: el S.O. proporciona una interfaz para que los usuarios interactúen con el
+                    sistema, ya sea a través de comandos de texto o de una GUI.</li>
+            </ul>
+        </p>
+        <p>
+            <strong>Tipos de S.O.</strong><br>
+            Existen varios tipos de sistemas operativos, entre los cuales se encuentran:
+            <ul>
+                <li>Sistemas operativos de tiempo compartido: permiten que múltiples usuarios utilicen el sistema al
+                    mismo tiempo, compartiendo el tiempo de CPU.</li>
+                <li>Sistemas operativos de tiempo real: diseñados para aplicaciones que requieren tiempos de respuesta
+                    muy rápidos.</li>
+                <li>Sistemas operativos de red: permiten la gestión de recursos y la comunicación entre computadoras en
+                    una red.</li>
+                <li>Sistemas operativos distribuidos: gestionan un conjunto de computadoras independientes, haciendo
+                    que parezcan un único sistema.</li>
+            </ul>
+        </p>
+        <p>
+            <strong>Ejemplos de S.O.</strong><br>
+            Algunos ejemplos de sistemas operativos son:
+            <ul>
+                <li>Windows</li>
+                <li>Linux</li>
+                <li>MacOS</li>
+                <li>Unix</li>
+                <li>Android</li>
+                <li>iOS</li>
+            </ul>
+        </p>
+        <p>
+            <strong>Importancia del S.O.</strong><br>
+            El sistema operativo es crucial para el funcionamiento de una computadora, ya que actúa como intermediario
+            entre el usuario y el hardware, facilitando el uso y la gestión de los recursos del sistema de manera
+            eficiente y segura.
+        </p>
+        <p>
+            <strong>Historia de los S.O.</strong><br>
+            Los primeros sistemas operativos nacieron a principios de los años 50 y han evolucionado significativamente
+            desde entonces. En sus inicios, los S.O. eran muy simples y estaban diseñados para gestionar tareas básicas.
+            Con el tiempo, se han vuelto más complejos y potentes, permitiendo la ejecución de múltiples tareas
+            simultáneamente y proporcionando interfaces de usuario más amigables y sofisticadas.
+        </p>
+        <p>
+            <strong>¿Qué es el Kernel?</strong><br>
+            El núcleo o kernel es el corazón del sistema operativo. Es responsable de la gestión de los recursos del
+            sistema, incluyendo la memoria, el procesador y los dispositivos de entrada/salida. El kernel se ejecuta en
+            modo supervisor y proporciona los servicios básicos necesarios para el funcionamiento del sistema operativo
+            y de las aplicaciones.
+        </p>
+        <section>
+            <img src="images.img.jpeg" class="imagen-materia">
+            <img src="Premium Vector _ Seamless pattern with programming and developers internet and coding.jpeg" class="imagen-materia">
+            <img src="What is computer hardware_.jpeg" class="imagen-materia">
+            <img src="Tecnologías futuras con sistema de información global _ Vector Premium.jpeg" class="imagen-materia">
+            <img src="Sistema Informático_ qué es, tipos, características y ejemplos.jpeg" class="imagen-materia">
+        </section>
+        <br><br><br><br>
+    </div>
+</div>
+
+<div id="parcial2" class="seccion">
+    <h2>2do Parcial</h2>
+    <div class="cuadro">
+        <p><strong>HTML- Estructura Básica de una Página Web</strong><br>
+            Consiste en una serie de elementos que usaras para encerrar diferentes partes del contenido para que se vean o comporten de una determinada manera.
+            La estructura básica de una página web se compone por las etiquetas &lt;html&gt;, &lt;head&gt; y &lt;body&gt;. La primera indica el comienzo de la página; la segunda es la cabecera y contiene información descriptiva del sitio; y la tercera es la que abarca todos los elementos visibles dentro de la página.</p>
+    
+            <p><strong>Virus y Antivirus Computacionales</strong><br>
+            <strong>Ransomware Mortal/Vulnerabilidades Explotadas/ Impacto Global</strong><br>
+            <strong>El Conti - Un Enemigo Sigiloso</strong><br>
+            Ataques Dirigidos/Daño Financiero/Preocupaciones de Seguridad<br>
+            <strong>El Troyano - Infiltración Silenciosa</strong><br>
+            Modo de Infección/Robo de Información/Detección Desafiante<br>
+            <strong>El Gusano - Propagación Implacable</strong><br>
+            Amenaza Auto-Replicante/Daño a la Red/Expansión Rápida<br>
+            <strong>El Revil - Amenaza de Ransomware Persistente</strong><br>
+            Explotación de Vulnerabilidades/Ataques Dirigidos/Reputación Dañada<br>
+            <strong>El Netwalker - Impacto en la Seguridad Cibernética</strong><br>
+            Consecuencias Globales/Extorsión Financiera<br>
+            Este virus busca extorsionar a las empresas, exigiendo rescates significativos a cambio de no revelar datos sensibles robados durante la violación de seguridad.
+            Los ataques de Netwalker han causado impacto a nivel mundial, lo que subraya la importancia de la colaboración global para hacer frente a las amenazas cibernéticas.</p>
+    
+            <p><strong>Razones para Utilizar Antivirus</strong><br>
+            Protección/ Actualizaciones/ Rendimiento Óptimo/ Soporte Técnico</p>
+    
+            <p><strong>Tipos de redes de informática</strong><br>
+            PAN, LAN, MAN, WAN, GAN, SAN, VPN, CAN<br>
+            <strong>PAN:</strong> Área personal, conectan dispositivos dentro de un espacio reducido.<br>
+            <strong>LAN:</strong> Conectan dispositivos dentro de un espacio reducido.<br>
+            <strong>MAN:</strong> Área amplia metropolitana, conectan dispositivos.<br>
+            <strong>WAN:</strong> Entre país y país.<br>
+            <strong>GAN:</strong> Conectan dispositivos a nivel mundial.<br>
+            <strong>SAN:</strong> Velocidad, para almacenamiento de datos.<br>
+            <strong>VPN:</strong> Asociar sistemas informáticos de manera lógica. Conexión entre ordenadores nivel mundial.<br>
+            <strong>CAN:</strong> Multiplexion de diferentes datos</p>
+    
+            <p><strong>Servicios de internet</strong><br>
+            El almacenamiento en la nube es un modelo de computación en la nube que permite almacenar datos y archivos en Internet a través de un proveedor de computación en la nube, al cual se accede mediante la red pública de Internet o una conexión de red privada dedicada.<br>
+            La ciberseguridad es la práctica de proteger sistemas, redes y programas de ataques digitales. Por lo general, estos ciberataques apuntan a acceder, modificar o destruir la información confidencial; extorsionar a los usuarios o los usuarios o interrumpir la continuidad del negocio.</p>
+    
+            <p><strong>Buscadores y navegadores web</strong><br>
+            Algunos de los más utilizados actualmente son Google Chrome, Microsoft Edge, Firefox, Ópera y Safari (iOS y macOS). Por otro lado, los motores de búsqueda son mecanismos que te ayudan a encontrar y recopilar información dentro de páginas web de Internet. Algunos ejemplos son: Google, Bing, DuckDuckGo y Qwant.<br>
+            Muchos principiantes en la web confunden motores de búsqueda con navegadores. Aclaremos esto: Un navegador es una pieza de software que obtiene y muestra páginas web; un buscador es un sitio web que ayuda a las personas a encontrar páginas web alojadas en otros sitios web.</p>
+    
+            <p>En este parcial vimos lo que es el internet, las estructuras de la página web que se componen por las etiquetas &lt;html&gt;, &lt;head&gt; y &lt;body&gt;, vimos virus y antivirus y lo peligrosos que pueden llegar a ser los virus y por qué es necesario tener un antivirus, también vimos los tipos de redes en informática y sus nombres, vimos los servicios de internet y sus usos y el último tema que vimos fue buscadores y navegadores web, lo que son y su función.</p>
+        <section>
+            <img src="Internet.jpeg" class="imagen-materia">
+            <img src="Computer Virus.jpeg" class="imagen-materia">
+            <img src="Protection Des Données Informatiques, Concept Isométrique De Cryptage Des E-mails_ _ Vecteur Premium.jpeg" class="imagen-materia">
+            <img src="Red MAN.jpeg" class="imagen-materia">
+            <img src="Trucos para arreglar lo que no te gusta de Google Chrome y no cambiar de navegador.jpeg" class="imagen-materia">
+            <img src="32 HTML And CSS Projects For Beginners (With Source Code).jpeg" class="imagen-materia">
+        </section>
+        <br><br><br><br>
+    </div>
+</div>
+
+<div id="parcial3" class="seccion">
+    <h2>3er Parcial</h2>
+    <div class="cuadro">
+        <p><strong>PROCESADOR DE TEXTO WORD</strong><br>
+            Involucrar en el uso del procesador de texto para aplicar sus habilidades, aptitudes y conocimientos, mediante textos y multimedia; que le permita publicar e imprimir documentos electrónicos en plataformas digitales. Para enlazar la importancia que tiene el uso de la computadora en la vida diaria, como el trabajo y escuela.</p>
+            <p><strong>Historia y evolución de los procesadores de texto</strong><br>
+            Un procesador de texto es un programa o software de computadora que sirve para crear, editar, modificar y procesar texto con distintas variaciones de formato.<br>
+            El término “procesador de texto” inicialmente lo acuñó un ingeniero de la empresa IBM como parte de la campaña de mercadeo de la máquina modelo MT/ST ofrecido por la empresa desde finales de la década de los 50.<br>
+            Como consecuencia, la MT/ST y el posterior desarrollo de las IBM MagCards, tarjetas magnéticas en las que se podía almacenar el texto escrito, pueden considerarse como el punto de inicio de los procesadores de palabras.<br>
+            Luego de la invención de la computadora moderna en 1946 y del desarrollo de la MT/ST de IBM, surgieron otras soluciones similares preprogramadas en el hardware.<br>
+            Sin embargo, la IBM luego inventó los discos floppy a principio de los años 70, lo que permitió por primera vez la creación de programas de computadora grabados en discos.<br>
+            Es decir, aparecieron los primeros programas escritos en forma de software, para realizar el procesado de textos. Estos programas nacieron a partir de 1970 y han ido evolucionando en paralelo con las computadoras.<br>
+            El primero de estos programas fue el Bravo. Este programa tenía un entorno gráfico WYSIWYG (lo que ves es lo que obtienes) y fue diseñado para una de las primeras computadoras con interfaz gráfica de usuario, Xerox Alto, lanzada en 1974.<br>
+            WordStar y WordPerfect fueron otros de los programas iniciales en popularizarse como procesadores de texto y dominar el mercado hasta la llegada de Microsoft Word.<br>
+            Microsoft Word es una aplicación informática que se usa principalmente para el procesamiento de textos. Fue creada por Microsoft, y actualmente viene incluida en la suite ofimática Microsoft Office. La primera versión de Word se lanzó en 1983 bajo el nombre Multi-Tool Word para Xenix; en su desarrollo participaron Richard Brodie y Charles Simonyi.<br>
+            Microsoft Word es un procesador de texto que desde su primera versión hasta la fecha se ha mantenido en el mercado a pesar de contar con grandes competidores como OpenOffice o LibreOffice. No obstante, la versión de Microsoft sigue siendo la más popular.</p>
+        <section>
+            <img src="Evolución de los procesadores de texto_.jpeg" class="imagen-materia">
+            <img src="descarga.jpeg" class="imagen-materia">
+            <img src="WordStar for Windows 1_5 - Splash.jpeg" class="imagen-materia">
+            
+        </section>
+        <br><br><br><br><br><br><br><br>
+    </div>
+</div>
+
+<div id="parcial4" class="seccion">
+    <h2>4to Parcial</h2>
+    <div class="cuadro">
+        <p><strong>Programas de Diseño</strong><br><br>
+            Elaborar presentaciones electrónicas con características particulares mediante el uso de herramientas y recursos digitales que aborden situaciones del contexto local, nacional o internacional con un propósito específico. Para compartir mediante foros de discusión y plataformas.</p>
+            <p><strong>PowerPoint</strong><br><br>
+            Es un programa de Microsoft Office, que tiene como objetivo principal diseñar presentaciones electrónicas atractivas. Al ser un programa de la familia Office tiene un ambiente parecido a sus programas hermanos, Word, Excel, Access, etc.</p>
+            <p><strong>¿Pero qué es una presentación?</strong><br><br>
+            Una presentación es una exposición de un tema, idea, proyecto, producto, etc. Las presentaciones se realizan dentro de varios ámbitos desde el escolar con nuestras clásicas exposiciones con hojas de papel bond hasta en una empresa de gran tamaño donde podemos realizar la muestra de un nuevo producto o proyecto.<br><br>
+            PowerPoint nos permite realizar presentaciones con calidad profesional utilizando audio, video, animaciones, gráficos, sonidos y muchas más herramientas que harán que nuestra exposición sea más atractiva para el auditorio que nos está observando. Pero antes de comenzar debemos conocer algunos conceptos básicos de una presentación en PowerPoint. Iniciaremos con:</p>
+            <p><strong>Diapositiva</strong>: Se le denomina así al área de trabajo de PowerPoint, es el lugar donde ponemos los elementos a mostrar como el texto, gráficos, imágenes, etc. Las diapositivas son el equivalente a las hojas de papel bond que utilizaríamos en una exposición tradicional.</p>
+            <p><strong>Diseño de una diapositiva</strong>: En PowerPoint las diapositivas pueden tener varios diseños los cuales definen la estructura u objetos que tendremos en las diapositivas, podemos utilizar algunos diseños como diapositiva de título, título y objetos, solo títulos, etc. Estos diseños están prediseñados y se encuentran en la ficha inicio opción diseños. Durante el curso utilizaremos más el diseño en blanco el cual solo nos entrega una diapositiva vacía (en blanco) y nosotros como usuario iremos creando su diseño como nos agrade.</p>
+            <p><strong>Meta comandos</strong>: los Meta comandos o combinaciones de teclas que podemos utilizar en PowerPoint son los mismos que hemos utilizado en la mayoría de nuestros programas como Word, Excel, etc. Aquí mostramos algunos Meta comandos que nos permitirán agilizar el trabajo en PowerPoint.
+                <ul>
+                    <li>Ctrl + A Abrir presentación.</li>
+                    <li>Ctrl + C Copiar.</li>
+                    <li>Ctrl + E Seleccionar todo.</li>
+                    <li>Ctrl + G Guardar.</li>
+                    <li>Ctrl + P Imprimir.</li>
+                    <li>Ctrl + V Pegar.</li>
+                    <li>Ctrl + Z Deshacer.</li>
+                </ul>
+            </p>
+            <p>Comencemos a trabajar con PowerPoint. Ahora que conocemos algunos conceptos básicos podemos comenzar a trabajar con nuestro programa, lo primero que debemos hacer es abrir nuestra aplicación la cual se abre de la misma forma como se abren la mayoría de nuestros programas, bastara seleccionar el menú inicio, activar todos los programas localizar la opción Microsoft Office y activar nuestro programa PowerPoint. Pero también tenemos la forma más rápida para abrir el programa la cual utilizan usuarios avanzados a esta forma la llamamos ejecutar. Y se realiza presionando la tecla de Windows y al mismo tiempo la tecla R, con lo cual se mostrará la opción de ejecutar y en ese cuadro colocamos power point y listo con esto abrirá nuestro programa.</p>
+            <p><strong>Conociendo el entorno gráfico.</strong><br><br>
+                <ul>
+                    <li>Barra de acceso rápido: útil para colocar los iconos que más utilizamos y tenerlos a nuestra mano.</li>
+                    <li>Barra de título: Muestra el nombre de nuestra presentación.</li>
+                    <li>Botones de control: controlan el estado de la pantalla de PowerPoint, el cual puede ser maximizado, minimizado, restaurado o cerrado.</li>
+                    <li>Fichas o pestañas: contienen el grupo de herramientas organizados por aplicaciones similares los principales grupos son archivo, Inicio, Insertar, Diseño de página, Formulas, Datos, etc.</li>
+                    <li>Cinta de Opciones: muestra el grupo de herramientas dentro de la ficha seleccionada, notaremos que al cambiar de ficha, nuestra cinta de opciones cambia para mostrar las herramientas que contienen.</li>
+                    <li>Grupos: son sus opciones dentro de la cinta de opciones que agrupan de forma más específicas herramientas que cumplen con fines específicos.</li>
+                    <li>Esquema: esta opción muestra la cantidad de diapositivas que forman nuestra presentación y también nos permiten cambiarnos fácilmente entre diapositivas.</li>
+                    <li>Diapositiva: Es el área de trabajo de PowerPoint el lugar donde colocaremos nuestros objetos (textos, imágenes, gráficos, etc.).</li>
+                    <li>Cuadro de notas: en esta área el usuario podrá colocar notas o comentarios que posteriormente pueden servir como medio de apoyo al momento de la exposición.</li>
+                    <li>Barras de desplazamiento Vertical y Horizontal: Estas barras nos serán útiles para movernos entre las diapositivas de la presentación.</li>
+                    <li>Vistas de presentación: contienen iconos de las diferentes vistas que tenemos disponibles en PowerPoint (normal, clasificador, lectura, presentación con diapositivas). También contiene el zoom el cual nos permitirá definir el tamaño del área de trabajo, es importante señalar que a mayor zoom veremos los objetos más grandes, pero en realidad no se modifica el tamaño solo se acerca o aleja el área de trabajo.</li>
+                    <li>Barra de estado: esta área nos mostrará algunos mensajes durante nuestro trabajo. Como la cantidad de diapositivas que tenemos y el idioma del diccionario para la corrección ortográfica.</li>
+                </ul>
+            </p>
+        <section>
+            <img src="Powerpoint Hacks _ Hyperlink.jpeg" class="imagen-materia">
+            <img src="Powerpoints Clipart Vector, Powerpoint Icon, Powerpoint Icons, Microsoft, Azure PNG Image For Free Download.jpeg" class="imagen-materia">
+            <img src="Free Programming Books; HTML5, CSS3, JavaScript, PHP, Python___.jpeg" class="imagen-materia">
+            <img src="The Must Read HTML vs CSS Infographic _ Coding Dojo Blog.jpeg" class="imagen-materia">
+           
+        </section>
+        <br><br><br><br><br><br><br><br>
+    </div>
+</div>
+
+<div id="materia" class="seccion">
+    <h2>FILOSOFÍA</h2>
+    <div class="cuadro">
+        <p>La filosofía abarca diversas ramas que exploran aspectos fundamentales del conocimiento humano y la realidad:<br><br>
+            Metafísica: Se ocupa de la naturaleza fundamental de la realidad y las preguntas sobre el ser, la existencia y la causalidad.<br><br>
+            Epistemología: Examina la naturaleza, el alcance y los límites del conocimiento, así como los métodos para adquirirlo y validarlos.<br><br>
+            Ética: Se centra en cuestiones de moralidad y valores, explorando qué es lo correcto o bueno y los principios que guían el comportamiento humano.<br><br>
+            Lógica: Estudia los principios del razonamiento válido y la inferencia correcta para evaluar argumentos y estructurar el pensamiento de manera coherente.<br><br>
+            Estética: Analiza la naturaleza del arte, la belleza y la apreciación estética, tanto desde perspectivas subjetivas como objetivas.<br><br>
+            Filosofía de la mente: Investiga la naturaleza de la mente, la conciencia y la cognición, así como la relación entre la mente y el cuerpo.<br><br>
+            Filosofía de la ciencia: Examina los fundamentos, métodos y presupuestos de la ciencia, así como sus límites y su relación con otras formas de conocimiento.<br><br>
+            Filosofía política: Se ocupa de cuestiones relacionadas con el gobierno, la justicia, el poder y la organización de la sociedad.<br><br>
+            Por otro lado, se pueden distinguir entre mito, religión, ciencia y filosofía:<br><br>
+            Mito: Narrativas tradicionales que explican el origen del mundo y fenómenos naturales, transmitidas oralmente y con elementos sobrenaturales.<br><br>
+            Religión: Sistemas de creencias y prácticas que abordan preguntas sobre lo divino, lo trascendental y la moralidad, con rituales y comunidades organizadas.<br><br>
+            Ciencia: Enfoque sistemático basado en la evidencia para entender el mundo natural a través de observación, experimentación y formulación de teorías, buscando la objetividad y la verificación.<br><br>
+            Filosofía: Disciplina que se ocupa de preguntas fundamentales sobre la realidad, el conocimiento, la moralidad y la existencia humana, basada en la reflexión crítica y el razonamiento lógico.<br><br>
+            Las diferencias entre estos campos se pueden ilustrar con ejemplos como el "Mito de la Caverna" de Platón, que explora la naturaleza del conocimiento, y las obras de Aristóteles, que abordan temas como la metafísica y la ética.<br><br><br><br><br>
+        </p>
+        <section>
+            <img src="Aristóteles_ Biografía, Pensamiento y Legado del Filósofo Griego.jpeg" class="imagen-materia">
+            <img src="cf11b5c7-57c2-4f1c-9a90-605cab3c5b27.jpeg" class="imagen-materia">
+            <img src="Tales de Mileto_ quem foi, contribuições, obras, resumo - Mundo Educação.jpeg" class="imagen-materia">
+           
+        <br><br><br><br>
+    </div>
+</div>
+
+<div id="integrantes" class="seccion">
+    <h2>Integrantes</h2>
+    <p>Diego Ismael Marfileño Mata<br><br> Diego Rocha Aguirre <br><br> Victoria Nicole Villanueva Ramirez</p>
+</div>
+
+<div id="contacto" class="seccion">
+    <h2>Contacto</h2>
+    <p>Puedes contactarnos a través de nuestro correo o de nuestro número telefónico</p><br>
+    <h2>diego-rocha@uadec.edu.mx</h2><br><h2>844 107 2596</h2>
+</div>
+
+<footer>
+    <p>Derechos de autor © 2024 - Mi Página Web</p>
+</footer>
+
+<script>
+    function mostrarSeccion(id) {
+        var secciones = document.querySelectorAll('.seccion');
+        secciones.forEach(function(seccion) {
+            seccion.style.display = 'none';
+        });
+        document.getElementById(id).style.display = 'block';
+        if (id !== "inicio") {
+            document.getElementById("inicio").style.display = 'none';
+        } else {
+            document.getElementById("inicio").style.display = 'flex';
+        }
+    }
+</script>
+
+</body>
+</html>
